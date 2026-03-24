@@ -9,7 +9,7 @@ use Orchestra\Testbench\TestCase as BaseTestCase;
 class TestCase extends BaseTestCase
 {
     // Older Testbench releases expect the concrete test case to provide this.
-    protected static ?TestResponse $latestResponse = null;
+    public static ?TestResponse $latestResponse = null;
 
     protected function getPackageProviders($app): array
     {
